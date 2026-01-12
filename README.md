@@ -186,7 +186,7 @@ kc-digital-expert/
 
 ### Phase 1: Foundation & Setup
 
-- [ ] Next.js Projekt initialisieren
+- [x] Next.js Projekt initialisieren
 - [ ] Ordnerstruktur anlegen
 - [ ] Dependencies installieren
 - [ ] Tailwind + shadcn/ui konfigurieren
