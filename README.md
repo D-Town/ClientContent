@@ -4,7 +4,7 @@
 
 Eine sichere, mehrsprachige Next.js-Plattform für automatisierte Content-Erstellung mit n8n-Integration, Supabase-Backend und Mitgliederbereich.
 
------
+---
 
 ## 📋 Projekt-Setup
 
@@ -62,7 +62,7 @@ mkdir -p messages
 mkdir -p config
 ```
 
------
+---
 
 ## 📁 Projektstruktur
 
@@ -166,7 +166,7 @@ kc-digital-expert/
 └── package.json
 ```
 
------
+---
 
 ## 🔧 Technologie-Stack
 
@@ -180,7 +180,7 @@ kc-digital-expert/
 - **Icons**: lucide-react
 - **Automation**: n8n (externe Workflows)
 
------
+---
 
 ## ✅ TODO Liste / Features
 
@@ -330,6 +330,7 @@ kc-digital-expert/
 - [ ] Content Export (PDF, JSON)
 
 ### Phase 14: Admin-Bereich (NEU!)
+
 - [ ] Admin Layout
 - [ ] User Management
   - [ ] User Liste mit Suche
@@ -350,8 +351,7 @@ kc-digital-expert/
   - [ ] Rate Limits anpassen
 - [ ] Audit Log (wer hat was geändert)
 
-
------
+---
 
 ## 🔐 Sicherheitskonzept
 
@@ -396,7 +396,7 @@ kc-digital-expert/
 - Supabase übernimmt CSRF Tokens
 - Custom Headers für API Requests
 
------
+---
 
 ## 🌿 Git & Semantic Versioning Setup
 
@@ -493,13 +493,15 @@ git commit -m "chore(deps): update next.js to v15"
 
 1. **Repository erstellen** (bereits erledigt)
 1. **Branch Protection Rules** (auf GitHub):
+
 - Settings → Branches → Add rule
 - Branch name pattern: `main`
 - ✅ Require pull request reviews before merging
 - ✅ Require status checks to pass before merging
 - ✅ Require branches to be up to date
+
 1. **GitHub Actions** (später):
-   
+
    ```yaml
    # .github/workflows/ci.yml
    name: CI
@@ -540,24 +542,29 @@ git commit -m "chore(deps): update next.js to v15"
 1. In `main` UND `develop` mergen
 1. Patch Version: `npm version patch`
 
------
+---
 
 ## 🚀 Next Steps
 
 1. **Jetzt sofort:**
+
 - Dependencies installieren
 - Ordnerstruktur anlegen
 - Git Setup mit Semantic Versioning
+
 1. **Als nächstes:**
+
 - Supabase Projekt anlegen
 - Environment Variables konfigurieren
 - Middleware für Auth + i18n
+
 1. **Dann:**
+
 - Erste UI Komponenten (shadcn/ui)
 - Landing Page Grundgerüst
 - Login/Register Forms
 
------
+---
 
 ## 📝 Environment Variables
 
@@ -577,7 +584,7 @@ N8N_API_KEY=your_n8n_api_key
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
------
+---
 
 ## 📚 Hilfreiche Links
 
@@ -589,6 +596,6 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 - [Semantic Versioning](https://semver.org)
 - [Conventional Commits](https://www.conventionalcommits.org)
 
------
+---
 
 **Let’s build something awesome! 🚀**
