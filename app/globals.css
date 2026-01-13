@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-
   html {
     scroll-behavior: smooth;
   }
 
   *:focus-visible {
-    outline: 2px solid #0D9488;
+    outline: 2px solid #0d9488;
     outline-offset: 2px;
     border-radius: 0.25rem;
   }
@@ -19,15 +18,15 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #FAF7F2;
+    background: #faf7f2;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #0F766E;
+    background: #0f766e;
     border-radius: 9999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #115E59;
+    background: #115e59;
   }
 }
