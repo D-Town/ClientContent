@@ -1,0 +1,107 @@
+{
+  "Common": {
+    "brand": "KC Digital Experts",
+    "skipToContent": "Skip to main content",
+    "menu": {
+      "open": "Open menu"
+    },
+    "nav": {
+      "products": "Products",
+      "productItems": {
+        "mrr": "MRR Products",
+        "affiliate": "Affiliate Products",
+        "other": "Other"
+      },
+      "about": "About",
+      "contact": "Contact",
+      "login": "Sign in"
+    },
+    "language": {
+      "label": "Switch language",
+      "de": "German",
+      "en": "English"
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "Welcome to our website",
+      "description": "Discover innovative solutions that make your life easier. With modern technology and user-friendly design.",
+      "primaryCta": "Get started",
+      "secondaryCta": "Learn more"
+    },
+    "features": {
+      "speed": {
+        "title": "Fast",
+        "description": "Lightning-fast performance for an optimal user experience."
+      },
+      "security": {
+        "title": "Secure",
+        "description": "Top security standards to protect your data."
+      },
+      "reliability": {
+        "title": "Reliable",
+        "description": "99.9% uptime for uninterrupted service."
+      }
+    },
+    "typography": {
+      "title": "Typography examples",
+      "h3": "This is an H3 heading",
+      "h4": "This is an H4 heading",
+      "h5": "This is an H5 heading",
+      "h6": "This is an H6 heading",
+      "bodyPrefix": "This is a normal paragraph with",
+      "linkText": "a link",
+      "bodySuffix": "The text is easy to read and has a pleasant line height.",
+      "mutedText": "This is muted text used for less important information."
+    },
+    "form": {
+      "title": "Contact form",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@email.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message..."
+      },
+      "submit": "Send"
+    }
+  },
+  "Footer": {
+    "quickLinks": {
+      "title": "Quick links",
+      "items": {
+        "home": "Home",
+        "shop": "Shop",
+        "about": "About",
+        "contact": "Contact"
+      }
+    },
+    "social": {
+      "title": "Social",
+      "items": {
+        "facebook": "Facebook",
+        "instagram": "Instagram"
+      }
+    },
+    "legal": {
+      "title": "Legal",
+      "items": {
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "imprint": "Imprint",
+        "withdrawal": "Right of withdrawal",
+        "accessibility": "Accessibility"
+      }
+    },
+    "about": {
+      "title": "About",
+      "description": "Discover with KC Digital Experts how to build a successful online business. Our proven strategies, easy-to-follow online courses, and personal consulting support you along the way."
+    },
+    "copyright": "© 2026 KC Digital Experts. All rights reserved."
+  }
+}

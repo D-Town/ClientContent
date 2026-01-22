@@ -1,9 +1,13 @@
+import { useTranslations } from 'next-intl';
+
 const Home = () => {
+
+  const t = useTranslations('Home');
   return (
     <div className="container-custom py-12 space-y-12">
       {/* Hero Section */}
       <section className="text-center space-y-6">
-        <h1 className="h1">Willkommen auf unserer Website</h1>
+        <h1 className="h1">{t("hero.title")}</h1>
         <p className="text-body-lg text-muted max-w-2xl mx-auto">
           Entdecke innovative Lösungen, die dein Leben einfacher machen. 
           Mit modernster Technologie und benutzerfreundlichem Design.

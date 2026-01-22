@@ -2,6 +2,7 @@
 import { useState } from "react";
 import ThemeToggle from "../theme-toggle";
 import Link from "next/link";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -41,6 +42,7 @@ export const Header = () => {
             <a href="/ueber-uns" className="nav-link">Über uns</a>
             <a href="/kontakt" className="nav-link">Kontakt</a>
             <ThemeToggle />
+            <LanguageSwitcher />
             <a href="/login" className="btn-primary">Anmelden</a>
           </div>
 

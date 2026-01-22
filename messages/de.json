@@ -1,0 +1,107 @@
+{
+  "Common": {
+    "brand": "KC Digital Experts",
+    "skipToContent": "Zum Hauptinhalt springen",
+    "menu": {
+      "open": "Menü öffnen"
+    },
+    "nav": {
+      "products": "Produkte",
+      "productItems": {
+        "mrr": "MRR-Produkte",
+        "affiliate": "Affiliate-Produkte",
+        "other": "Sonstige"
+      },
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "login": "Anmelden"
+    },
+    "language": {
+      "label": "Sprache wechseln",
+      "de": "Deutsch",
+      "en": "Englisch"
+    }
+  },
+  "Home": {
+    "hero": {
+      "title": "Willkommen auf unserer Website",
+      "description": "Entdecke innovative Lösungen, die dein Leben einfacher machen. Mit modernster Technologie und benutzerfreundlichem Design.",
+      "primaryCta": "Jetzt starten",
+      "secondaryCta": "Mehr erfahren"
+    },
+    "features": {
+      "speed": {
+        "title": "Schnell",
+        "description": "Blitzschnelle Performance für optimale Nutzererfahrung."
+      },
+      "security": {
+        "title": "Sicher",
+        "description": "Höchste Sicherheitsstandards zum Schutz deiner Daten."
+      },
+      "reliability": {
+        "title": "Zuverlässig",
+        "description": "99,9% Verfügbarkeit für unterbrechungsfreien Service."
+      }
+    },
+    "typography": {
+      "title": "Typografie Beispiele",
+      "h3": "Das ist eine H3 Überschrift",
+      "h4": "Das ist eine H4 Überschrift",
+      "h5": "Das ist eine H5 Überschrift",
+      "h6": "Das ist eine H6 Überschrift",
+      "bodyPrefix": "Dies ist ein normaler Absatz mit",
+      "linkText": "einem Link",
+      "bodySuffix": "Der Text ist gut lesbar und hat einen angenehmen Zeilenabstand.",
+      "mutedText": "Dies ist ein gedämpfter Text, der für weniger wichtige Informationen verwendet wird."
+    },
+    "form": {
+      "title": "Kontaktformular",
+      "name": {
+        "label": "Name",
+        "placeholder": "Dein Name"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "deine@email.de"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Deine Nachricht..."
+      },
+      "submit": "Absenden"
+    }
+  },
+  "Footer": {
+    "quickLinks": {
+      "title": "Kurzlinks",
+      "items": {
+        "home": "Startseite",
+        "shop": "Shop",
+        "about": "Über uns",
+        "contact": "Kontakt"
+      }
+    },
+    "social": {
+      "title": "Sozial",
+      "items": {
+        "facebook": "Facebook",
+        "instagram": "Instagram"
+      }
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "items": {
+        "terms": "AGB",
+        "privacy": "Datenschutz",
+        "imprint": "Impressum",
+        "withdrawal": "Widerrufsbelehrung",
+        "accessibility": "Barriererefreiheit"
+      }
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Entdecke mit KC Digital Experts, wie du dein Online-Business erfolgreich aufbauen kannst. Unsere erprobten Strategien, leicht verständlichen Online-Kurse und persönliche Beratung unterstützen dich dabei."
+    },
+    "copyright": "© 2026 KC Digital Experts. Alle Rechte vorbehalten."
+  }
+}
