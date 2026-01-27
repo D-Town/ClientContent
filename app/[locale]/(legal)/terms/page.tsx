@@ -5,8 +5,8 @@ const Terms = () => {
 
   return (
     <main className="kc-wrap" role="main" aria-labelledby="page-title">
-      <section className="kc-card">
-        <div className="legal-content">
+
+        <div className="container-custom py-12 space-y-12">
           <section className="legal-section">
             <h1 id="page-title">Allgemeine Geschäftsbedingungen (AGB)</h1>
             <p><strong>für digitale Produkte &amp; digitale Dienstleistungen</strong></p>
@@ -261,7 +261,7 @@ const Terms = () => {
             </p>
           </section>
         </div>
-      </section>
+
     </main>
   );
 }
