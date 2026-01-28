@@ -35,17 +35,17 @@ npx shadcn@latest init
 ```bash
 # Hauptordner
 mkdir -p app/{api,\[locale\]}
-mkdir -p app/[locale]/{auth,marketing,dashboard}
+mkdir -p app/\[locale\]/{auth,marketing,dashboard}
 mkdir -p app/api/{auth,content,webhook}
 
 # Auth Routen
-mkdir -p app/[locale]/auth/{login,register}
+mkdir -p app/\[locale\]/auth/{login,register}
 
 # Marketing Routen (öffentlich)
-mkdir -p app/[locale]/marketing/{about,products,privacy,imprint}
+mkdir -p app/\[locale\]/marketing/{about,products,privacy,imprint}
 
 # Dashboard Routen (geschützt)
-mkdir -p app/[locale]/dashboard/{content,profile,settings,api-keys}
+mkdir -p app/\[locale\]/dashboard/{content,profile,settings,api-keys}
 
 # Components
 mkdir -p components/{ui,auth,dashboard,marketing,shared}
@@ -183,12 +183,12 @@ kc-digital-expert/
 ## ✅ TODO Liste / Features
 
 ### Phase 1: Foundation & Setup
-- [ ] Next.js Projekt initialisieren
-- [ ] Ordnerstruktur anlegen
-- [ ] Dependencies installieren
-- [ ] Tailwind + shadcn/ui konfigurieren
-- [ ] Git Repository setup mit Semantic Versioning
-- [ ] GitHub Actions für CI/CD vorbereiten
+- [x] Next.js Projekt initialisieren
+- [x] Ordnerstruktur anlegen
+- [x] Dependencies installieren
+- [ ] Tailwind konfigurieren
+- [x] Git Repository setup mit Release Please
+- [x] GitHub Actions für CI/CD vorbereiten
 
 ### Phase 2: Supabase Setup
 - [ ] Supabase Projekt erstellen
