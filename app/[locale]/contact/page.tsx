@@ -104,15 +104,16 @@ const Contact = () => {
         <p className="text-muted mb-6">{t('intro')}</p>
 
         {status === 'success' ? (
-          <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-4 text-emerald-200">
-            <strong className="block mb-1">{t('success.title')}</strong>
+          <div className="alert alert--success">
+            <div className="alert__title">{t('success.title')}</div>
             <span>{t('success.message')}</span>
           </div>
         ) : null}
 
         {status === 'error' ? (
-          <div className="rounded-lg border border-rose-500/30 bg-rose-500/10 p-4 text-rose-200">
-            {error}
+          <div className="alert alert--error">
+            <div className="alert__title">{t('errors.default')}</div>
+            <span>{error}</span>
           </div>
         ) : null}
 
