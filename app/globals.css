@@ -307,6 +307,30 @@
     color: var(--color-text-muted);
   }
 
+  .alert {
+    border: 1px solid transparent;
+    border-radius: 0.9rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .alert--success {
+    background: color-mix(in srgb, var(--color-primary) 12%, transparent);
+    border-color: color-mix(in srgb, var(--color-primary) 35%, transparent);
+    color: var(--color-primary);
+  }
+
+  .alert--error {
+    background: color-mix(in srgb, #EF4444 12%, transparent);
+    border-color: color-mix(in srgb, #EF4444 35%, transparent);
+    color: #EF4444;
+  }
+
+  .alert__title {
+    color: var(--color-text-heading);
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+
   .skip-link {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
