@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/D-Town/ClientContent/compare/v1.4.0...v1.5.0) (2026-01-31)
+
+
+### Features
+
+* add about us page with translations ([ce02d63](https://github.com/D-Town/ClientContent/commit/ce02d63a06a53636335ea9c8d7f442d7344299e2))
+
 ## [1.4.0](https://github.com/D-Town/ClientContent/compare/v1.3.0...v1.4.0) (2026-01-31)
 
 
