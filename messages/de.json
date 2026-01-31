@@ -34,7 +34,7 @@
       "buttonSubtitle": "zur Produktauswahl"
     },
     "story": {
-      "title":"Unsere Story - Wer wir sind",
+      "title": "Unsere Story - Wer wir sind",
       "p1": "Wir wissen genau, wie es sich anfühlt, wenn am Ende des Monats mehr Tage als Geld übrig sind. Diese Situation hat uns wachgerüttelt - und wir haben beschlossen, das zu ändern.",
       "p2": "Wir wollten raus aus dem Hamsterrad und haben nach Wegen gesucht, uns online etwas Eigenes aufzubauen: flexibel, von überall, ohne großes Startkapital. Nicht nur, um uns selbst mehr leisten zu können, sondern auch, um unsere Familie zu unterstützen und für die Zukunft vorzusorgen.",
       "p3": "Der Anfang war alles andere als leicht. Es gab unzählige Angebote - aber kaum klare Antworten. Was funktioniert wirklich? Und wo fängt man an?",
@@ -42,14 +42,53 @@
       "p5": "Denn eines ist heute klarer denn je: Es reicht nicht mehr, nur ein Einkommen zu haben. Wer finanziell sicherer leben will, braucht verschiedene Standbeine - am besten solche, die auch im Hintergrund für dich arbeiten. Ob als Zusatzeinkommen oder langfristige Perspektive: Es ist möglich, wenn du weißt, wie."
     },
     "consulting": {
-      "title":"Brauchst du persönliche Beratung?",
-      "p1":"Du bist dir nicht sicher, welches Angebot zu dir passt oder brauchst eine individuelle Strategie? Buche ein kostenloses Erstgespräch mit uns!",
-      "button":"JETZT Termin Sichern",
+      "title": "Brauchst du persönliche Beratung?",
+      "p1": "Du bist dir nicht sicher, welches Angebot zu dir passt oder brauchst eine individuelle Strategie? Buche ein kostenloses Erstgespräch mit uns!",
+      "button": "JETZT Termin Sichern",
       "buttonSubtitle": "Kostenlose Beratung buchen"
     },
     "why": {
-      "title":"Warum KC Digital Experts?",
-      "bullets": ["<strong>✔ Erprobte Strategien</strong> - Wir zeigen dir nur, was wirklich funktioniert.","<strong>✔ Kein Tech-BlaBla </strong>- Leicht verständlich, praxisnah und umsetzbar.","<strong>✔ Erfahrung aus erster Hand</strong> - Wir haben unser Business selbst nebenbei aufgebaut."]
+      "title": "Warum KC Digital Experts?",
+      "bullets": [
+        "<strong>✔ Erprobte Strategien</strong> - Wir zeigen dir nur, was wirklich funktioniert.",
+        "<strong>✔ Kein Tech-BlaBla </strong>- Leicht verständlich, praxisnah und umsetzbar.",
+        "<strong>✔ Erfahrung aus erster Hand</strong> - Wir haben unser Business selbst nebenbei aufgebaut."
+      ]
+    }
+  },
+  "AboutUs": {
+    "title":"Über uns",
+    "whoIs": {
+      "title": "Wir sind Katja und Christian, die Köpfe hinter KC Digital Experts.",
+      "p1": "Wir haben selbst bei null angefangen und wissen genau, wie verwirrend der Einstieg ins digitale Business sein kann.",
+      "p2": "Unsere Mission ist es, dir den Weg einfacher zu machen. Mit ehrlichen, transparenten Lösungen ohne leere Versprechen oder unnötigen Hype."
+    },
+    "history": {
+      "title": "Unsere Geschichte. Vom ständigen Ausprobieren zum funktionierenden Online-Business",
+      "p1": "Lange Zeit waren wir auf der Suche nach einer Möglichkeit, neben dem Hauptjob endlich <i>mehr Freiheit</i> und <i>finanzielle</i> Sicherheit aufzubauen. Wir haben vieles ausprobiert, von Network Marketing über Affiliate Marketing bis hin zu digitalem Marketing. Immer mit einer zentralen Frage im Kopf:",
+      "p2": "Wie baue ich mir etwas Eigenes auf, wenn mir die Zeit fehlt und ich nicht weiß, wo ich anfangen soll?",
+      "p3": "Wir haben unzählige Stunden mit YouTube-Videos, Blogartikeln und Freebies verbracht. Trotzdem blieb immer dieses Gefühl: <strong>Mir fehlt ein klarer Fahrplan.</strong> Keine Struktur, kein System, viele Informationen, aber keine echte Umsetzung.",
+      "p4": "Bis wir schließlich das gefunden haben, was den entscheidenden Unterschied gemacht hat. Ein Konzept, das leicht verständlich ist, sich in den Alltag integrieren lässt und wirklich funktioniert.",
+      "p5": "Heute geben wir genau dieses Wissen weiter. Weil wir wissen, wie es sich anfühlt, nach Antworten zu suchen und sie endlich zu finden."
+    },
+    "frustration": {
+      "title": "Was uns frustriert hat und warum wir es besser machen",
+      "p1": "Zu viele Coaches versprechen schnellen Erfolg und halten am Ende nichts. Teure Coaching-Programme, geschönte Erfolgsgeschichten und leere Worte.",
+      "subTitle": "Genau deshalb haben wir KC Digital Experts gegründet:",
+      "bullets": [
+        "Ehrlich, transparent und praxisnah",
+        "Keine falschen Versprechen, sondern funktionierende Lösungen",
+        "Klare Struktur und smarte KI-Strategien für dein Business"
+      ]
+    },
+    "why": {
+      "title": "Warum du mit uns arbeiten solltest",
+      "bullets": [
+        "Wir wissen, wie es ist, bei null zu starten.",
+        "Wir empfehlen nur, was wir selbst nutzen und für sinnvoll halten.",
+        "Dein Erfolg ist auch unser Erfolg. Wir gehen diesen Weg gemeinsam mit dir.",
+        "Einfache Strategien, die sich auch mit wenig Zeit umsetzen lassen."
+      ]
     }
   },
   "Contact": {
