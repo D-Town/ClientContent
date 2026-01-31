@@ -55,7 +55,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <div className="flex flex-col min-h-screen dark-mode-transition">
             <Header />
-            <main id="main-content" className="flex-1" role="main">
+            <main>
               {children}
             </main>
             <Footer />
