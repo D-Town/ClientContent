@@ -41,7 +41,7 @@ export const Header = () => {
                 <Link href="/produkte/sonstige" className="nav-link">{t("nav.productItems.other")}</Link>
               </div>
             </details>
-            <Link href="/ueber-uns" className="nav-link">{t("nav.about")}</Link>
+            <Link href="/aboutUs" className="nav-link">{t("nav.about")}</Link>
             <Link href="/contact" className="nav-link">{t("nav.contact")}</Link>
             <ThemeToggle />
             <LanguageSwitcher />

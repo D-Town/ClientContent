@@ -1,29 +1,35 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
   const t = useTranslations('AboutUs');
   const whyBullets = t.raw('why.bullets') as string[];
   const frustrationBullets = t.raw('frustration.bullets') as string[];
   return (
-    <>
+    <main className="kc-wrap" role="main" aria-labelledby="page-title">
       <div className="container-custom py-12 space-y-12">
-        <h1 className="h1">{t("title")}</h1>
         <section className="card space-y-4">
-          <h2 className="h2">{t("whoIs.p1")}</h2>
-          <p>{t("whoIs.p1")}</p>
-          <p>{t("whoIs.p2")}</p>
+          <h1 className="h1">{t("title")}</h1>
         </section>
-        <pre>Hier soll noch ein bild rein</pre>
 
+        <section className="kc-card dark-mode-transition mb-10 sm:mb-14">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h3 className="h3">{t("whoIs.p1")}</h3>
+              <br />
+              <p>{t("whoIs.p1")}</p>
+              <br />
+              <p>{t("whoIs.p2")}</p>
+            </div>
 
+            {/* Visual / Mock */}
+            <div className="relative">
+              <Image src="/img/kate-and-chris-transparent.png" width={506} height={506} alt="" />
+            </div>
+          </div>
+        </section>
 
-        {/* <p> {t.rich('history.p2', {
-            strong: (chunks) => <strong>{chunks}</strong>,
-            u: (chunks) => <u>{chunks}</u>,
-          })}</p>
-          <p>{t.rich('history.p3', {
-            strong: (chunks) => <strong>{chunks}</strong>
-          })}</p> */}
         <section className="card space-y-4">
           <h2 className="h2">{t("history.title")}</h2>
           <p> {t.rich('history.p1', {
@@ -65,7 +71,7 @@ const AboutUs = () => {
           </ul>
         </section>
       </div>
-    </>
+    </main>
   );
 }
 
