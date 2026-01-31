@@ -41,7 +41,7 @@ export const Header = () => {
                 <Link href="/produkte/sonstige" className="nav-link">{t("nav.productItems.other")}</Link>
               </div>
             </details>
-            <Link href="/ueber-uns" className="nav-link">{t("nav.about")}</Link>
+            <Link href="/aboutUs" className="nav-link">{t("nav.about")}</Link>
             <Link href="/contact" className="nav-link">{t("nav.contact")}</Link>
             <ThemeToggle />
             <LanguageSwitcher />
@@ -79,8 +79,8 @@ export const Header = () => {
                 <Link href="/produkte/sonstige" className="nav-link block rounded-lg px-3 py-2" role="menuitem">{t("nav.productItems.other")}</Link>
               </div>
             </details>
-            <Link href="/ueber-uns" className="nav-link block rounded-xl px-3 py-2" role="menuitem">{t("about")}</Link>
-            <Link href="/kontakt" className="nav-link block rounded-xl px-3 py-2" role="menuitem">{t("contact")}</Link>
+            <Link href="/aboutUs" className="nav-link block rounded-xl px-3 py-2" role="menuitem">{t("about")}</Link>
+            <Link href="/contact" className="nav-link block rounded-xl px-3 py-2" role="menuitem">{t("contact")}</Link>
             <Link href="/login" className="btn-primary w-full mt-3" role="menuitem">{t("login")}</Link>
           </div>
         )}

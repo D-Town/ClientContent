@@ -16,11 +16,11 @@ const Home = () => {
       <div className="container-custom py-12 space-y-12">
 
         <section className="text-center space-y-6">
-          <h1 className="h1"></h1>
           <h2 className="h2">
             {t("hero.subTitle")}
           </h2>
         </section>
+
         <section className="card space-y-4">
           <p>{t("hero.p1")}</p>
           <p> {t.rich('hero.p2', {
@@ -35,8 +35,9 @@ const Home = () => {
             <button className="btn-primary">{t("hero.button")}</button>
           </div>
         </section>
+
         <br />
-        <br />
+
         <section className="card space-y-4">
           <h2 className="h2">{t("story.title")}</h2>
           <p>{t("story.p1")}</p>
@@ -45,6 +46,9 @@ const Home = () => {
           <p>{t("story.p4")}</p>
           <p>{t("story.p5")}</p>
         </section>
+
+        <br />
+
         <section className="card space-y-4">
           <h2 className="h2">{t("consulting.title")}</h2>
           <p>{t("consulting.p1")}</p>
