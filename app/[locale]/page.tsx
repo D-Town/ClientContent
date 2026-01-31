@@ -9,7 +9,7 @@ import Section from '../../components/home/Section';
 import Hero from '../../components/home/Hero';
 
 export default function Home() {
-    const t = useTranslations('Home');
+  const t = useTranslations('Home');
   return (
     <main id="container-custom py-12 space-y-12" className="container-custom py-10 sm:py-14">
       <Hero />
