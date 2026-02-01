@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import ProductCard from "../../../components/shop/ProductCard";
 import { getActiveProducts, getMRRProducts, getAffiliateProducts } from "../../../lib/products-helper";
 
 export default async function ShopPage() {
+  const t = await getTranslations("Shop.mainPage");
   const allProducts = await getActiveProducts();
   const mrrProducts = await getMRRProducts();
   const affiliateProducts = await getAffiliateProducts();
@@ -12,89 +14,78 @@ export default async function ShopPage() {
   const affiliateCount = affiliateProducts.length;
 
   return (
-    <main className="kc-wrap" role="main" aria-labelledby="page-title">
-      <div className="container-custom py-12 space-y-12">
+    <div id="main-content" className="container-custom py-12 space-y-16">
       <section className="kc-card dark-mode-transition">
         <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-6">
-            <p className="text-body-sm text-muted">
-              Digitale Produkte • Klarer Fokus • Sofort startklar
-            </p>
+            <p className="text-body-sm text-muted">{t("main.p0")}</p>
             <h1 className="h1" id="shop-title">
-              Deine nächste Umsatzstufe beginnt mit dem richtigen Produkt.
+              {t("main.title")}
             </h1>
-            <p className="text-body-sm text-muted">
-              Kuratiert, geprüft und so aufgebaut, dass du schnell sichtbar wirst und sicher skalieren kannst.
-            </p>
+            <p className="text-body-sm text-muted">{t("main.p1")}</p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Link href="#produkte" className="btn-primary">
-                Produkte entdecken
+                {t("main.link1")}
               </Link>
               <Link href="/contact" className="btn-ghost">
-                Beratung anfragen
+                {t("main.link2")}
               </Link>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="kc-card dark-mode-transition">
-              <p className="text-body-sm text-muted">Produkte gesamt</p>
+              <p className="text-body-sm text-muted">{t("main.div.p1")}</p>
               <p className="h3">{totalProducts}</p>
             </div>
             <div className="kc-card dark-mode-transition">
-              <p className="text-body-sm text-muted">MRR Produkte</p>
+              <p className="text-body-sm text-muted">{t("main.div.p2")}</p>
               <p className="h3">{mrrCount}</p>
             </div>
             <div className="kc-card dark-mode-transition sm:col-span-2">
-              <p className="text-body-sm text-muted">Affiliate Produkte</p>
+              <p className="text-body-sm text-muted">{t("main.div.p3")}</p>
               <p className="h3">{affiliateCount}</p>
-              <p className="text-body-sm text-muted mt-2">
-                Für Partner, die Reichweite in skalierbare Umsätze verwandeln möchten.
-              </p>
+              <p className="text-body-sm text-muted mt-2">{t("main.div.p4")}</p>
             </div>
           </div>
         </div>
       </section>
 
       <section className="kc-card dark-mode-transition space-y-4" aria-labelledby="context-title">
-        <h2 className="h2" id="context-title">Kontext / Problem</h2>
-        <p>
-          Viele digitale Produkte wirken austauschbar, lassen sich schwer erklären oder liefern keine klaren Ergebnisse.
-          Genau dort entstehen Unsicherheit und Kaufabbrüche.
-        </p>
-        <p>
-          Diese Auswahl reduziert Komplexität, fokussiert auf echte Nachfrage und sorgt für einen planbaren Ablauf von
-          der ersten Aufmerksamkeit bis zur Conversion.
-        </p>
+        <h2 className="h2" id="context-title">{t("context.title")}</h2>
+        <p>{t.rich("context.p1", { br: () => <br /> })}</p>
+        <p>{t.rich("context.p2", { br: () => <br /> })}</p>
       </section>
 
-      <section className="space-y-12" id="produkte" aria-labelledby="products-title">
+      <section className="space-y-12" aria-labelledby="products-title">
         <div className="kc-card dark-mode-transition space-y-4">
-          <h2 className="h2" id="products-title">Lösung / Ansatz</h2>
-          <p>
-            Du bekommst strukturierte Produktpakete, klare Positionierung und messbaren Mehrwert. Jedes Produkt ist so
-            aufgebaut, dass es sofort kommuniziert werden kann – ohne Content-Chaos.
-          </p>
+          <h2 className="h2" id="solution-title">{t("solution.title")}</h2>
+          <p>{t.rich("solution.p1", { br: () => <br /> })}</p>
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="kc-card dark-mode-transition">
-              <p className="text-body-sm text-muted">Positionierung</p>
-              <p className="h4">Sofort verständlicher Nutzen</p>
+              <p className="text-body-sm text-muted">{t("solution.div.p1")}</p>
+              <p className="h4">{t("solution.div.p2")}</p>
             </div>
             <div className="kc-card dark-mode-transition">
-              <p className="text-body-sm text-muted">Assets</p>
-              <p className="h4">Fixe Sales-Page Struktur</p>
+              <p className="text-body-sm text-muted">{t("solution.div.p3")}</p>
+              <p className="h4">{t("solution.div.p4")}</p>
             </div>
             <div className="kc-card dark-mode-transition">
-              <p className="text-body-sm text-muted">Skalierung</p>
-              <p className="h4">Umsatz mit System statt Zufall</p>
+              <p className="text-body-sm text-muted">{t("solution.div.p5")}</p>
+              <p className="h4">{t("solution.div.p6")}</p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="space-y-8">
+      <section className="space-y-12" id="produkte" aria-labelledby="products-title">
+        <div className="space-y-8" id="mrr">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <h3 className="h3">MRR Produkte</h3>
-            <p className="text-body-sm text-muted">{mrrCount} Produkte</p>
+            <h3 className="h3">{t("products.mrr.h3")}</h3>
+            <p className="text-body-sm text-muted">
+              {mrrCount} {t("products.mrr.p1")}
+            </p>
           </div>
+          <p>{t("products.mrr.p2")}</p>
           {mrrCount ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {mrrProducts.map((product) => (
@@ -102,15 +93,18 @@ export default async function ShopPage() {
               ))}
             </div>
           ) : (
-            <p className="text-body-sm text-muted">Aktuell sind keine MRR Produkte verfügbar.</p>
+            <p className="text-body-sm text-muted">{t("products.mrr.fallback")}</p>
           )}
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-8" id="affiliate">
           <div className="flex flex-wrap items-center justify-between gap-4">
-            <h3 className="h3">Affiliate Produkte</h3>
-            <p className="text-body-sm text-muted">{affiliateCount} Produkte</p>
+            <h3 className="h3">{t("products.affiliate.h3")}</h3>
+            <p className="text-body-sm text-muted">
+              {affiliateCount} {t("products.affiliate.p1")}
+            </p>
           </div>
+          <p>{t("products.affiliate.p2")}</p>
           {affiliateCount ? (
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {affiliateProducts.map((product) => (
@@ -118,32 +112,27 @@ export default async function ShopPage() {
               ))}
             </div>
           ) : (
-            <p className="text-body-sm text-muted">Aktuell sind keine Affiliate Produkte verfügbar.</p>
+            <p className="text-body-sm text-muted">{t("products.affiliate.fallback")}</p>
           )}
         </div>
       </section>
 
-      <section className="kc-card dark-mode-transition space-y-4" aria-labelledby="audience-title">
+      {/* <section className="kc-card dark-mode-transition space-y-4" aria-labelledby="audience-title">
         <h2 className="h2" id="audience-title">Für wen?</h2>
         <ul className="space-y-2">
           <li>Creator und Experten, die ihr Wissen produktisieren wollen.</li>
           <li>Agenturen, die skalierbare Angebote neben Services brauchen.</li>
           <li>Affiliate-Partner mit klarer Zielgruppe und Performance-Fokus.</li>
         </ul>
-      </section>
+      </section> */}
 
       <section className="kc-card dark-mode-transition space-y-4" aria-labelledby="story-title">
-        <h2 className="h2" id="story-title">Story / About</h2>
-        <p>
-          KC Digital Experts verbindet Strategie, Content und Automatisierung. Wir testen Produkte in der Praxis,
-          reduzieren auf das Wesentliche und liefern Assets, die funktionieren.
-        </p>
-        <p>
-          Das Ergebnis: weniger Chaos, mehr Klarheit und ein Setup, das mit deinem Wachstum Schritt hält.
-        </p>
+        <h2 className="h2" id="story-title">{t("story.title")}</h2>
+        <p>{t.rich("story.p1", { br: () => <br /> })}</p>
+        <p>{t("story.p2")}</p>
       </section>
 
-      <section className="kc-card dark-mode-transition space-y-6" aria-labelledby="testimonials-title">
+      {/* <section className="kc-card dark-mode-transition space-y-6" aria-labelledby="testimonials-title">
         <div className="space-y-2">
           <h2 className="h2" id="testimonials-title">Testimonials</h2>
           <p className="text-body-sm text-muted">
@@ -162,9 +151,9 @@ export default async function ShopPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <section className="kc-card dark-mode-transition space-y-6" aria-labelledby="cta-title">
+      {/* <section className="kc-card dark-mode-transition space-y-6" aria-labelledby="cta-title">
         <div className="space-y-3">
           <h2 className="h2" id="cta-title">Bereit für die nächste Verkaufswelle?</h2>
           <p className="text-body-sm text-muted">
@@ -179,8 +168,7 @@ export default async function ShopPage() {
             Produkte vergleichen
           </Link>
         </div>
-      </section>
+      </section> */}
     </div>
-    </main>
   );
 }
