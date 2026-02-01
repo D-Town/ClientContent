@@ -1,7 +1,8 @@
-// components/ProductCard.tsx
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Product } from '../../types/products';
+import { useTranslations } from 'next-intl';
 
 interface ProductCardProps {
   product: Product;
@@ -9,6 +10,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const badgeLabel = product.tag === 'affiliate' ? 'Affiliate Produkt' : 'MRR Produkt';
+  const t = useTranslations("Shop.productCard");
   return (
     <article className="kc-card dark-mode-transition flex h-full flex-col gap-6">
       {product.image && (
@@ -42,7 +44,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <p className="h4">
             {product.price.toFixed(2)} {product.currency}
           </p>
-          <p className="text-body-sm text-muted">Empfohlener Preis: {product.rrp.toFixed(2)} {product.currency}</p>
+          <p className="text-body-sm text-muted">{t("p")} {product.rrp.toFixed(2)} {product.currency}</p>
         </div>
 
         <div className="mt-auto flex flex-col gap-3">
@@ -52,7 +54,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             rel="noopener noreferrer"
             className="btn-primary w-full justify-center"
           >
-            Jetzt kaufen
+            {t("link")}
           </Link>
         </div>
       </div>
