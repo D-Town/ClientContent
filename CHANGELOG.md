@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.0](https://github.com/D-Town/ClientContent/compare/v1.5.0...v1.6.0) (2026-02-02)
+
+
+### Features
+
+* add shop page ([ec7ada2](https://github.com/D-Town/ClientContent/commit/ec7ada2dc19f433c26d401a9a5c20a1bb6dfe821))
+* add supabase ([3d79a2f](https://github.com/D-Town/ClientContent/commit/3d79a2f331740a9f89993f2f8d7fd5f34413d1e4))
+* add thanks page and 404 ([e45546c](https://github.com/D-Town/ClientContent/commit/e45546c7e61834ac168f681b40532b2398078d75))
+
 ## [1.5.0](https://github.com/D-Town/ClientContent/compare/v1.4.0...v1.5.0) (2026-01-31)
 
 
