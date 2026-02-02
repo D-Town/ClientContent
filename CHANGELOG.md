@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/D-Town/ClientContent/compare/v1.6.0...v1.7.0) (2026-02-02)
+
+
+### Features
+
+* add sitemap and robots ([4cf4155](https://github.com/D-Town/ClientContent/commit/4cf415594b22c9c1a44a79408272eb57068ea54c))
+
 ## [1.6.0](https://github.com/D-Town/ClientContent/compare/v1.5.0...v1.6.0) (2026-02-02)
 
 
