@@ -74,3 +74,23 @@ export async function getProductById(productId: string): Promise<Product | null>
   
   return data;
 }
+
+export async function getProductByThankYouSlug(slug: string): Promise<Product | null> {
+  const supabase = await createClient();
+  const normalized = slug.startsWith('/') ? slug : `/${slug}`;
+
+  const { data, error } = await supabase
+    .from('products')
+    .select('*')
+    .eq('is_active', true)
+    .eq('tag', 'mrr')
+    .or(`thank_you_page.eq.${normalized},thank_you_page.ilike.%${normalized}`)
+    .limit(1);
+
+  if (error) {
+    console.error('Error fetching product by thank you slug:', error);
+    return null;
+  }
+
+  return data?.[0] ?? null;
+}

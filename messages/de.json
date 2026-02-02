@@ -535,5 +535,11 @@
       "p": "Empfohlener Preis:",
       "link": "Jetzt kaufen"
     }
+  },
+  "NotFound": {
+    "title": "Diese Seite wurde nicht gefunden.",
+    "p": "Der Link ist möglicherweise falsch oder die Seite ist nicht mehr verfügbar.",
+    "button1": "Zum Shop",
+    "button2": "Support kontaktieren"
   }
 }

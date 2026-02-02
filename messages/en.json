@@ -535,5 +535,11 @@
       "p": "Recommended price:",
       "link": "View product"
     }
+  },
+  "NotFound": {
+    "title": "Page not found.",
+    "p": "The link is wrong or maybe not available anymore",
+    "button1": "Shop",
+    "button2": "contact Support"
   }
 }
