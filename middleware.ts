@@ -6,14 +6,16 @@ import { NextResponse, type NextRequest } from 'next/server';
 const setSecurityHeaders = (response: NextResponse) => {
   const isProd = process.env.NODE_ENV === 'production';
 
+  const isDev = process.env.NODE_ENV !== 'production';
+  const scriptUnsafeEval = isDev ? " 'unsafe-eval'" : "";
   const csp = [
     "default-src 'self'",
     "base-uri 'self'",
     "form-action 'self'",
     "frame-ancestors 'none'",
     "object-src 'none'",
-    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
-    "script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
+    `script-src 'self' 'unsafe-inline'${scriptUnsafeEval} https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/`,
+    `script-src-elem 'self' 'unsafe-inline'${scriptUnsafeEval} https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://stats.g.doubleclick.net https://www.gstatic.com",
     "connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",

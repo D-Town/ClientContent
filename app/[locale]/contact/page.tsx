@@ -53,9 +53,10 @@ const Contact = () => {
 
     setError('');
     setStatus('submitting');
+    const form = event.currentTarget;
 
     try {
-      const formData = new FormData(event.currentTarget);
+      const formData = new FormData(form);
       const name = String(formData.get('name') || '').trim();
       const email = String(formData.get('email') || '').trim();
       const message = String(formData.get('message') || '').trim();
@@ -85,7 +86,7 @@ const Contact = () => {
         throw new Error(mapped || t('errors.default'));
       }
 
-      event.currentTarget.reset();
+      form.reset();
       setMessageLength(0);
       setStatus('success');
     } catch (err) {
