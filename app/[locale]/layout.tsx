@@ -94,7 +94,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </noscript>
             ) : null}
             <Header />
-            {children}
+            <div className="flex-1">
+              {children}
+            </div>
             <Footer />
           </div>
           <CookieConsentBanner />
